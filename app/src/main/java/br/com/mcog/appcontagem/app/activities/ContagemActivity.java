@@ -44,7 +44,7 @@ import de.codecrafters.tableview.toolkit.SimpleTableHeaderAdapter;
 
 public class ContagemActivity extends AppCompatActivity {
 
-    private final String[] vetorColunasTabelaContagem = {"Cód. P","Cód. de barras","Quant.","Subtotal"};
+    private final String[] vetorColunasTabelaContagem = {"Iden.","Cód. de barras","Quant.","Subtotal"};
     private boolean permissaoEdicaoCelula;
 
     // Mensagem de loading
