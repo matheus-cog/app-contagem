@@ -71,7 +71,7 @@ public class ContagemActivity extends AppCompatActivity {
 
                 // Para cada repetição do while, um produto empresa novo é lançado no banco interno
                 while (rs.next()){
-                    produto.setCodPort(rs.getString(1).replace(" ",""));
+                    produto.setIdentificador(rs.getString(1).replace(" ",""));
                     produto.setDescricao(rs.getString(2));
                     produto.setCodBarras(rs.getString(3).replace(" ",""));
                     produto.setNomeMarca(rs.getString(4).replace(" ",""));
