@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.activities.ContagemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constranintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_content_paste_24"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/btn_finalizar_contagem"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/black"
+                    android:src="@drawable/ic_done_24"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_salvar_contagem"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/todo"/>
+
+                <ImageButton
+                    android:id="@+id/btn_salvar_contagem"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/black"
+                    android:src="@drawable/ic_baseline_save_alt_24"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_cancelar_contagem"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/todo"/>
+
+                <ImageButton
+                    android:id="@+id/btn_cancelar_contagem"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/black"
+                    android:src="@drawable/ic_baseline_cancel_24"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_informacoes_contagem"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/todo"/>
+
+                <ImageButton
+                    android:id="@+id/btn_informacoes_contagem"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/black"
+                    android:src="@drawable/ic_info"
+                    android:tint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="@string/todo"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txt_quantidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txt_qtd"
+                app:layout_constraintBottom_toTopOf="@+id/edt_quantidade"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_quantidade"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edit_text_preto"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constranintLayout"
+                android:autofillHints=""
+                android:inputType="number"
+                android:maxLength="4"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/txt_cod_barras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/txt_codigo_de_barras"
+                app:layout_constraintBottom_toTopOf="@+id/edt_cod_barras"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_cod_barras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_preto"
+                android:maxLines="1"
+                android:lines="1"
+                android:digits="0123456789"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/edt_quantidade"
+                app:layout_constraintTop_toBottomOf="@+id/constranintLayout"
+                android:autofillHints=""
+                android:inputType="number"
+                tools:ignore="LabelFor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_preto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constranintLayout">
+
+                <de.codecrafters.tableview.TableView
+                    android:id="@+id/table_view"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    app:tableView_headerColor="@color/gray"
+                    app:tableView_headerElevation="0"/>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

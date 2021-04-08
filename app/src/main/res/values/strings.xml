@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Contagem inventário</string>
+    <string name="todo">TODO</string>
+    <string name="txt_qtd">Qtd:</string>
+    <string name="txt_codigo_de_barras">Código de barras:</string>
+    <string name="txt_selecione_a_unidade_para_contagem">Selecione a unidade para contagem:</string>
+    <string name="txt_selecione_a_area_para_contagem">Selecione a área para contagem:</string>
+    <string name="txt_insira_a_data_da_contagem">Insira a data da contagem:</string>
+    <string name="txt_ddmmaaaa">DDMMAAAA</string>
+    <string name="txt_insira_a_reincidencia_da_contagem">Insira a reincidência da contagem:</string>
+    <string name="txt_insira_o_codigo_do_operador">Insira o código do operador:</string>
+    <string name="txt_insira_o_numero_do_coletor">Insira o número do coletor:</string>
+    <string name="txt_selecione_o_tipo_de_contagem">Selecione o tipo de contagem:</string>
+    <string name="txt_sera_permitido_a_edicao_das_celulas_durante_a_contagem">Será permitido a edição das células durante a contagem?</string>
+    <string name="txt_avancar">AVANÇAR</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_senha">Senha</string>
+    <string name="txt_valor">Valor</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="txt_quantidade">Quantidade</string>
+</resources>
